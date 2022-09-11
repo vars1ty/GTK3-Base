@@ -1,0 +1,18 @@
+[package]
+name = "gtk3-base"
+authors = [ "varsity" ]
+description = "A simple GTK3 Rust Application"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+glib = "0.15.12"
+gtk = "0.15.5"
+
+# Optimizes for smaller build-size on release, uncomment the lines below if you want it.
+# Use `du -sh (executable)` to find the file-size of your exported application.
+#[profile.release]
+#opt-level = "z"
+#panic = "abort"
+#strip = true
+#lto = true
